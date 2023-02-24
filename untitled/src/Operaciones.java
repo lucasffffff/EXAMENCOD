@@ -5,6 +5,8 @@ public class Operaciones {
     static final int RESTA = 2;
     static final int MULTIPLICACION = 3;
     static final int DIVISION = 4;
+    static final int RAIZ_CUADRADA = 5;
+    static final int RAIZ_CUBICA = 6;
 
 
     public static Float calculadora(int device, float num1, float num2){
@@ -34,6 +36,20 @@ public class Operaciones {
             case DIVISION:
                 try{
                     resultado = num1/num2;
+                }catch (Exception e){
+                    System.out.println("Error");
+                }
+                break;
+            case RAIZ_CUADRADA:
+                try{
+                    resultado = (float) Math.sqrt(num1);
+                }catch (Exception e){
+                    System.out.println("Error");
+                }
+                break;
+            case RAIZ_CUBICA:
+                try{
+                    resultado = (float) Math.cbrt(num1);
                 }catch (Exception e){
                     System.out.println("Error");
                 }
