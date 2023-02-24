@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="examen2">
+    <output-path>$PROJECT_DIR$/out/artifacts/examen2</output-path>
+    <root id="archive" name="unnamed.jar" />
+  </artifact>
+</component>
